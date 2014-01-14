@@ -3,3 +3,10 @@
  * @file
  * Drupal needs this blank file.
  */
+
+function acc_users_user_default_permissions_alter(&$permissions) {
+  if (isset($permissions['access toolbar'])) {
+    $permissions['access toolbar']['roles']['access manager'] = 'access manager';
+    $permissions['access toolbar']['roles']['access editor'] = 'access editor';
+  }
+}
