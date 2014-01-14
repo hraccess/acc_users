@@ -9,4 +9,16 @@ function acc_users_user_default_permissions_alter(&$permissions) {
     $permissions['access toolbar']['roles']['access manager'] = 'access manager';
     $permissions['access toolbar']['roles']['access editor'] = 'access editor';
   }
+  if (isset($permissions['create files'])) {
+    $permissions['create files']['roles']['access manager'] = 'access manager';
+    $permissions['create files']['roles']['access editor'] = 'access editor';
+  }
+  if (isset($permissions['use text format full_html'])) {
+    $permissions['use text format full_html']['roles']['access manager'] = 'access manager';
+    $permissions['use text format full_html']['roles']['access editor'] = 'access editor';
+  }
+  if (isset($permissions['use text format filtered_html'])) {
+    $permissions['use text format filtered_html']['roles']['access manager'] = 'access manager';
+    $permissions['use text format filtered_html']['roles']['access editor'] = 'access editor';
+  }
 }
