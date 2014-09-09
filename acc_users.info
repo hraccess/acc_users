@@ -1,10 +1,11 @@
 name = Access Users
-description = Provides the access manager and editor roles with their permissions
+description = Provides the access manager and editor roles
 core = 7.x
 package = Humanitarian Access
+version = 7.x-2.0
+project = acc_users
 dependencies[] = features
 dependencies[] = role_export
 features[features_api][] = api:2
 features[user_role][] = access editor
 features[user_role][] = access manager
-features_exclude[dependencies][role_export] = role_export
