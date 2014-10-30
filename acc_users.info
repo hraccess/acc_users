@@ -11,6 +11,4 @@ dependencies[] = og_role_delegate
 features[features_api][] = api:2
 features[og_features_role][] = node:hr_operation:access-editor
 features[og_features_role][] = node:hr_operation:access-manager
-features[user_role][] = access editor
-features[user_role][] = access manager
 features_exclude[dependencies][role_export] = role_export
